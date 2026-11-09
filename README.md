@@ -31,7 +31,7 @@ Todos los comandos se ejecutan desde la raíz del repositorio.
 ```bash
 .venv/bin/python main.py                          # asignación propuesta -> salidas/asignacion.xlsx
 .venv/bin/python main.py --exportar-elegibilidad  # plantilla de elegibilidad -> datos/elegibilidad.csv
-.venv/bin/python experimentos.py                  # experimentos E1–E7 -> salidas/resultados.xlsx (~3 min)
+.venv/bin/python experimentos.py                  # experimentos E1–E7 -> salidas/resultados.xlsx (~6 min)
 .venv/bin/python informe/generar_figuras.py       # figuras y tablas del informe (~3 min)
 .venv/bin/python -m pytest tests                  # 31 pruebas
 ```
