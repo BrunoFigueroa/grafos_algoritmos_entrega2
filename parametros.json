@@ -1,0 +1,33 @@
+{
+  "_ayuda": "Parámetros del selector de ayudantes. Las claves que empiezan con '_' son comentarios y se ignoran. Ver README, sección Parámetros.",
+
+  "pesos": {
+    "_ayuda": "Costo de la arista H->C: a·P^O + b·P^E + c·P^A + d·[no elegible]. Deben sumar 1. P^O = ranking del profesor (oferta), P^E = prioridad del estudiante, P^A = orden por nota del ramo y promedio (asignatura). d = peso del alumno no elegible (modo 'penalizar'): con d >= 0,6, en los casos evaluados (E5), no se usan más no elegibles que los necesarios para alcanzar la cobertura; con d menor hay más flexibilidad; con d = 0 se ignora la elegibilidad. Base: proporción a:b:c = 4:3:3 (E4) y d = 0,6 (E5).",
+    "a": 0.16,
+    "b": 0.12,
+    "c": 0.12,
+    "d": 0.6
+  },
+
+  "capacidades": {
+    "_ayuda": "Restricciones duras. max_ayudantias = c(S,E_i). capacidad_correccion = c(E_i, H_i,corr), el bloque ficticio de los correctores. cupos: historico | todas | oferta.",
+    "max_ayudantias": 3,
+    "capacidad_correccion": 3,
+    "cupos": "historico",
+    "incluir_no_rankeados": true
+  },
+
+  "elegibilidad": {
+    "_ayuda": "Elegible = promedio >= promedio_minimo y nota del ramo >= nota_minima_ramo. modo_no_elegibles: penalizar (usa d, por defecto) | dos_pasadas | excluir. archivo_elegibilidad: CSV generado con 'python main.py --exportar-elegibilidad' (columna elegible_manual = SI / NO / vacío); null para no usarlo.",
+    "promedio_minimo": 5.0,
+    "nota_minima_ramo": 5.0,
+    "modo_no_elegibles": "penalizar",
+    "archivo_elegibilidad": null
+  },
+
+  "externas": {
+    "_ayuda": "Ayudantías que el alumno ya tiene en otros departamentos (p. ej. Ciencias Básicas); se restan de max_ayudantias. Formato: \"P001\": 1"
+  },
+
+  "semilla": 0
+}

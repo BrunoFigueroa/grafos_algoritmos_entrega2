@@ -1,0 +1,31 @@
+Postulaciones: 1245 | alumnos: 149 | secciones: 218 | con cupo: 127
+Pesos a/b/c/d = 0.16/0.12/0.12/0.6 | modo no elegibles: penalizar | elegibles: promedio >= 5.0, nota >= 5.0 (994 de 1245 postulaciones)
+Oferta: 44 cursos, 213 unidades | secciones con bloque: 117 | semilla emparejamiento: 0
+Red: 723 nodos, 1677 aristas | flujo=127 | 109 ms
+
+                         Histórico (manual)  Greedy por sección  Flujo costo mínimo
+cupos                               127.000             127.000             127.000
+cubiertos                           127.000             126.000             127.000
+% cobertura                         100.000              99.200             100.000
+alumnos distintos                    75.000              77.000              77.000
+alumnos con 1                        37.000              42.000              43.000
+alumnos con 2                        24.000              21.000              18.000
+alumnos con 3+                       14.000              14.000              16.000
+excesos de tope                       0.000               0.000               0.000
+choques horarios                      3.000               0.000               0.000
+no elegibles asignados                6.000               4.000               1.000
+no rankeados asignados                0.000               1.000               0.000
+% 1a prio profe                      71.700              89.700              63.000
+% dentro de 3 del profe              97.600              99.200              96.900
+prio profe promedio                   1.410               1.140               1.560
+% 1a prio alumno                     34.600              33.300              39.400
+prio alumno promedio                  5.180               4.750               3.670
+% 1o por notas                       26.000              30.200              41.700
+P_O promedio                          0.113               0.057               0.097
+P_E promedio                          0.354               0.335               0.245
+P_A promedio                          0.356               0.318               0.230
+costo (misma función)                16.730              13.420               9.830
+
+Resultado escrito en /home/mdesktop/Documents/grafos y algoritmos/Entrega_2/salidas/asignacion.xlsx
+Plantilla de elegibilidad escrita en /home/mdesktop/Documents/grafos y algoritmos/Entrega_2/datos/elegibilidad.csv.
+Complete la columna elegible_manual (SI / NO / vacío) y apúntela en parametros.json -> elegibilidad.archivo_elegibilidad.

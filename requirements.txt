@@ -1,0 +1,8 @@
+# Versiones con que se generaron los resultados del informe (Python 3.12)
+pandas==3.1.0
+numpy==2.5.4
+openpyxl==3.1.5
+xlrd==2.0.2
+networkx==3.7
+matplotlib==3.11.2
+pytest==9.2.0
